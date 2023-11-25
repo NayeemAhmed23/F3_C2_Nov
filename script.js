@@ -1,7 +1,6 @@
 
-
-
 const signUpBtn = document.getElementById("form-btn");
+
 
 signUpBtn.addEventListener("click", ((event) => {
     event.preventDefault();
@@ -9,33 +8,33 @@ signUpBtn.addEventListener("click", ((event) => {
     const email = document.getElementById("youremail").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmpassword").value;
-
+    
     localStorage.setItem("Fullname", name);
     localStorage.setItem("Email", email);
     localStorage.setItem("Password", password);
     localStorage.setItem("confirmPassword", confirmPassword);
+    localStorage.setItem("Token", generateAccessToken());
     
-    navigateToAnotherPage();
-
+    navigateToProfilePage();
+    
     
 }))
-function navigateToAnotherPage() {
-    // Assign the new URL to the window.location.href property
+function navigateToProfilePage() {
+    
+    alert("Logged in succesfully");
     window.location.href = 'index2.html';
-   
-    // const userDetails = document.getElementsByClassName("content-section");
-    // const userName = localStorage.getItem("Fullname");
-    // console.log(Fullname)
-    // const userEmail = localStorage.getItem("Email");
-    // const userPassword = localStorage.getItem("Password");
-    // userDetails.innerHTML = `
-    // <p>Fullname : ${userName}</p>
-    // <p>Email : ${userEmail}</p>
-    // <p>Password : ${userPassword}</p>`;
-// const details = `<p>Fullname : ${userName}</p>
-// <p>Email : ${userEmail}</p>
-// <p>Password : ${userEmail}</p>`
-// userDetails.appendChild(details)
+}
 
+
+
+function generateAccessToken() {
+    // A simple function to generate a random 16-byte string
+    const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    let accessToken = "";
+    for (let i = 0; i < 16; i++) {
+        const randomIndex = Math.floor(Math.random() * charset.length);
+        accessToken += charset[randomIndex];
+    }
+    return accessToken;
 }
 

@@ -1,121 +1,150 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Mulish', sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
 }
 .main-section {
-    display: flex;
-    background-image: url(./Assets/Sign\ In\ Page\ Desktop.png);
-    background-repeat: no-repeat;
-    background-size:cover;
+  display: flex;
+  background-image: url(./Assets/Sign\ In\ Page\ Desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.signup-page{
-    margin: auto;
+.signup-page {
+    background-color: white;
+    width: 444px;
+    height: 537px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin: auto;
 }
 
 caption {
-    color: #757575;
-font-family: Mulish;
-font-size: 14px;
-font-weight: 400;
+  color: #757575;
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 400;
 }
- 
+
 .heading {
-    color: #333;
-font-family: Mulish;
-font-size: 24px;
-font-weight: 700;
+  color: #333;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 label {
-    color: #333;
-font-family: Mulish;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  color: #333;
+  font-family: Mulish;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 input {
-    display: flex;
-width: 352px;
-height: 37px;
-padding: 0px 12px;
-align-items: flex-start;
-gap: 12px;
-flex-shrink: 0;
-border-radius: 6px;
-border: 1px solid #DEDEDE;
+  display: flex;
+  width: 352px;
+  height: 37px;
+  padding: 0px 12px;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #dedede;
 }
 
-#form-btn, #btn {
-    color: #FFF;
-font-family: Mulish;
-font-size: 16px;
-font-style: normal;
-font-weight: 800;
-line-height: 18px; /* 112.5% */
-display: flex;
-width: 352px;
-height: 55.804px;
-padding: 9px 14px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-border-radius: 6px;
-background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
-border: none;
+#form-btn,
+#logout-btn {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px; /* 112.5% */
+  display: flex;
+  width: 352px;
+  height: 55.804px;
+  padding: 9px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #625bf7 0%, #463eea 100%);
+  border: none;
 }
 #para {
-    color: #625BF7;
-text-align: center;
-font-family: Mulish;
-font-size: 18px;
-font-weight: 700;
-border: none;
+  color: #625bf7;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 700;
+
 }
 .para {
-    color: #333;
-text-align: center;
-font-family: Mulish;
-font-size: 12px;
-font-weight: 400;
+  color: #333;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 400;
 }
-span {
-    color: #625BF7;
-font-family: Mulish;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+#span {
+  color: #625bf7;
+  font-family: Mulish;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
 
 .main-container {
-    display: flex;
-    background-image: url(./Assets/Sign\ In\ Page\ Desktop2.png);
-    background-repeat: no-repeat;
-    background-size:cover;
+  display: flex;
+  background-image: url(./Assets/Sign\ In\ Page\ Desktop2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .home-page {
-    margin: auto;
+  margin: auto;
 }
 #heading {
-    color: #625BF7;
-text-align: center;
-font-family: Mulish;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #625bf7;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 .img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+    color: #333;
+text-align: center;
+font-family: Mulish;
+font-size: 18px;
+font-weight: 400;
+}
+.home-page{
+    background-color: white;
+    width: 444px;
+    height: 537px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+}
+.content-section{
+    color: #333;
+text-align: center;
+font-family: Mulish;
+font-size: 18px;
+font-weight: 400;
 }
